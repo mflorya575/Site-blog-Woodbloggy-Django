@@ -1,8 +1,9 @@
 {% extends "blog/base.html" %}
 {% block title %}WoodBloggy{% endblock %}
-{% block content %}
 
+{% block content %}
 <h1>WoodBloggy</h1>
+
 {% for post in posts %}
     <h2>
         <a href="{{ post.get_absolute_url }}">
@@ -14,4 +15,6 @@
     </p>
     {{ post.body|truncatewords:30|linebreaks }}
 {% endfor %}
+
+{% include "pagination.html" with page=posts %}
 {% endblock %}
