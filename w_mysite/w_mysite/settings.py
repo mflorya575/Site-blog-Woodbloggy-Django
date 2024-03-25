@@ -103,6 +103,14 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# Конфигурация сервера электронной почты
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'floria.mahail@gmail.com'
+EMAIL_HOST_PASSWORD = 'eajjsfxosblrtysb'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
