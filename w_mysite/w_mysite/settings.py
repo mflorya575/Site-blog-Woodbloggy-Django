@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     # Приложения
     'blog.apps.BlogConfig',
+
+    # Сторонние библиотеки
+    'taggit',
 ]
 
 MIDDLEWARE = [
